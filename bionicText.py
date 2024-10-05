@@ -61,13 +61,11 @@ text_input.pack(padx=10, pady=10)
 format_button = tk.Button(root, text="Format Text", command=format_text)
 format_button.pack(pady=5)
 
+export_button = tk.Button(root, text="Open in Browser", command=export_to_html)
+export_button.pack(pady=5)
 
 copy_button = tk.Button(root, text="Copy to Clipboard", command=copy_to_clipboard)
 copy_button.pack(pady=5)
-
-
-export_button = tk.Button(root, text="Open in Browser", command=export_to_html)
-export_button.pack(pady=5)
 
 text_output = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=40, height=10, state=tk.DISABLED)
 text_output.pack(padx=10, pady=10)
