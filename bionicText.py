@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import scrolledtext
-import pyperclip  # pyperclip for clipboard functionality
-import webbrowser  #  webbrowser to open the HTML file
-import os  # os to handle file paths
+import pyperclip  
+import webbrowser 
+import os 
 
 def format_text():
     input_text = text_input.get("1.0", tk.END).strip()
@@ -10,7 +10,6 @@ def format_text():
     
     for word in input_text.split():
         half_index = len(word) // 2
-        # Format the word with HTML tags
         formatted_word = f"<b>{word[:half_index]}</b>{word[half_index:]} "
         output_text += formatted_word
 
@@ -53,27 +52,23 @@ def export_to_html():
     # Open the HTML file in the default web browser
     webbrowser.open(file_path)
 
-# Create main window
 root = tk.Tk()
-root.title("Text Formatter")
+root.title("Bionic Text Editor - h3x0r-offical")
 
-# Input text area
 text_input = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=40, height=10)
 text_input.pack(padx=10, pady=10)
 
-# Format button
 format_button = tk.Button(root, text="Format Text", command=format_text)
 format_button.pack(pady=5)
 
-# Copy button
+
 copy_button = tk.Button(root, text="Copy to Clipboard", command=copy_to_clipboard)
 copy_button.pack(pady=5)
 
-# Export button
-export_button = tk.Button(root, text="Export to HTML", command=export_to_html)
+
+export_button = tk.Button(root, text="Open is Browser", command=export_to_html)
 export_button.pack(pady=5)
 
-# Output area
 text_output = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=40, height=10, state=tk.DISABLED)
 text_output.pack(padx=10, pady=10)
 
