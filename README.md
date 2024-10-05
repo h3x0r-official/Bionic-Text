@@ -16,3 +16,7 @@ Click on format text.
 Now you have 2 options.
 1. Copy to Clipboard : It will just copy the output to clipboard
 2. Export to HTML : It will run the output in your browser.
+
+Output:
+
+![image](https://github.com/user-attachments/assets/e049be00-41c6-48a3-b714-9fafbfcbd01a)
