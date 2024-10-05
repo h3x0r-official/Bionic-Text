@@ -66,7 +66,7 @@ copy_button = tk.Button(root, text="Copy to Clipboard", command=copy_to_clipboar
 copy_button.pack(pady=5)
 
 
-export_button = tk.Button(root, text="Open is Browser", command=export_to_html)
+export_button = tk.Button(root, text="Open in Browser", command=export_to_html)
 export_button.pack(pady=5)
 
 text_output = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=40, height=10, state=tk.DISABLED)
